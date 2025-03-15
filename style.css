@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --mainBoxBG: #e056fd;
+  --fontColor: #000;
+  --buttonColor: blue;
+  --white: #fff;
+  --inputField: #ccccff;
+}
+.darkMode {
+  --mainBoxBG: #2f3542;
+  --fontColor: #fff;
+  --buttonColor: #fff;
+  --white: #000;
+  --inputField: #fff;
+}
+#mainBox {
+  width: 400px;
+  border-radius: 8px;
+  background: var(--mainBoxBG);
+  padding: 18px;
+}
+#mainBox .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#mainBox .heading h3 {
+  text-align: center;
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: var(--fontColor);
+  border-bottom: 2px dashed blue;
+}
+
+#mainBox .heading img {
+  width: 25px;
+  margin-left: 50px;
+  position: fixed;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#mainBox .form form label {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--fontColor);
+}
+#mainBox .form form input {
+  padding: 6px 10px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 4px;
+  width: 100%;
+  background: var(--inputField);
+  color: black;
+  font-size: 16px;
+}
+#mainBox .form form input::placeholder {
+  color: black;
+  font-size: 16px;
+}
+#mainBox .form .footer {
+  text-align: center;
+}
+#mainBox .form .footer h2 {
+  margin-top: 30px;
+  color: var(--fontColor);
+  padding: 8px 10px;
+  height: 50px;
+}
+#mainBox .form .footer button {
+  border: navajowhite;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  background: var(--buttonColor);
+  color: var(--white);
+}
