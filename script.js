@@ -28,6 +28,11 @@ calcBtn.onclick = (e) => {
     (yourName === "prottasha" && prtnerName === "yusuf")
   ) {
     outputField.innerText = "100 %";
+  } else if (
+    (yourName === "sourav" && prtnerName === "muna") ||
+    (yourName === "muna" && prtnerName === "sourav")
+  ) {
+    outputField.innerText = "100 %";
   } else if (yourName === prtnerName) {
     outputField.innerText = "Are you gay/lesbo?";
   } else {
