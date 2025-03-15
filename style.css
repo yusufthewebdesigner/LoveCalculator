@@ -27,7 +27,7 @@ body {
   --inputField: #fff;
 }
 #mainBox {
-  width: 400px;
+  width: 390px;
   border-radius: 8px;
   background: var(--mainBoxBG);
   padding: 18px;
@@ -48,7 +48,7 @@ body {
 
 #mainBox .heading img {
   width: 25px;
-  margin-left: 50px;
+  margin-left: 35px;
   position: fixed;
   margin-top: 8px;
   cursor: pointer;
