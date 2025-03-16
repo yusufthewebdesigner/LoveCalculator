@@ -31,6 +31,6 @@ calcBtn.onclick = (e) => {
   } else if (yourName === prtnerName) {
     outputField.innerText = "Are you gay/lesbo?";
   } else {
-    outputField.innerText = loveValues + "%";
+    outputField.innerText = loveValue + "%";
   }
 };
