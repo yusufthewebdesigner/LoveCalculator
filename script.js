@@ -24,8 +24,8 @@ calcBtn.onclick = (e) => {
   if (yourName === "" || prtnerName === "") {
     outputField.innerText = "Please, fill both of the field!";
   } else if (
-    (yourName === "yusuf" && prtnerName === "prottasha") ||
-    (yourName === "prottasha" && prtnerName === "yusuf")
+    (yourName.match("yusuf") && prtnerName.match("prottasha")) ||
+    (yourName.match("prottasha") && prtnerName.match("yusuf"))
   ) {
     outputField.innerText = "100 %";
   } else if (
@@ -34,7 +34,7 @@ calcBtn.onclick = (e) => {
   ) {
     outputField.innerText = "100 %";
   } else if (yourName === prtnerName) {
-    outputField.innerText = "Are you gay/lesbo?";
+    outputField.innerText = "Are you homo?";
   } else {
     outputField.innerText = loveValue + "%";
   }
