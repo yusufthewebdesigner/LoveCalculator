@@ -32,6 +32,11 @@ calcBtn.onclick = (e) => {
     (yourName.match("muna") && partnerName.match("sourav"))
   ) {
     outputField.innerText = "100 %";
+  } else if (
+    (yourName.match("amjad") && partnerName.match("surjana")) ||
+    (yourName.match("surjana") && partnerName.match("amjad"))
+  ) {
+    outputField.innerText = "100 %";
   } else if (yourName === partnerName) {
     outputField.innerText = "Are you homo?";
   } else {
