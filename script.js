@@ -14,26 +14,25 @@ icon.onclick = function () {
   }
 };
 //
-
 calcBtn.onclick = (e) => {
   e.preventDefault();
   let yourName = document.getElementById("you").value.toLowerCase();
-  let prtnerName = document.getElementById("partner").value.toLowerCase();
+  let partnerName = document.getElementById("partner").value.toLowerCase();
   let outputField = document.getElementById("loveCount");
   let loveValue = Math.floor(Math.random() * 70) + 20;
-  if (yourName === "" || prtnerName === "") {
+  if (yourName === "" || partnerName === "") {
     outputField.innerText = "Please, fill both of the field!";
   } else if (
-    (yourName.match("yusuf") && prtnerName.match("prottasha")) ||
-    (yourName.match("prottasha") && prtnerName.match("yusuf"))
+    (yourName.match("yusuf") && partnerName.match("prottasha")) ||
+    (yourName.match("prottasha") && partnerName.match("yusuf"))
   ) {
     outputField.innerText = "100 %";
   } else if (
-    (yourName === "sourav" && prtnerName === "muna") ||
-    (yourName === "muna" && prtnerName === "sourav")
+    (yourName.match("sourav") && partnerName.match("muna")) ||
+    (yourName.match("muna") && partnerName.match("sourav"))
   ) {
     outputField.innerText = "100 %";
-  } else if (yourName === prtnerName) {
+  } else if (yourName === partnerName) {
     outputField.innerText = "Are you homo?";
   } else {
     outputField.innerText = loveValue + "%";
