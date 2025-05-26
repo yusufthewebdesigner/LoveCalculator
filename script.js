@@ -23,6 +23,11 @@ calcBtn.onclick = (e) => {
   if (yourName === "" || partnerName === "") {
     outputField.innerText = "Please, fill both of the field!";
   } else if (
+    (yourName.match("yusuf") && partnerName.match("eva")) ||
+    (yourName.match("eva") && partnerName.match("yusuf"))
+  ) {
+    outputField.innerText = "100 %";
+  } else if (
     (yourName.match("sourav") && partnerName.match("muna")) ||
     (yourName.match("muna") && partnerName.match("sourav"))
   ) {
